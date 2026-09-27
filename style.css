@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+}
+
+body {
+  background: #E5D7BD; /* بني فاتح من الصورة */
+}
+
+/* Navigation Bar */
+nav {
+  background: #3A2A2A; /* بني غامق من اللوجو */
+  padding: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+nav img.logo {
+  width: 100px; /* حجم اللوجو */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+}
+
+nav ul li {
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #D4AF37; /* ذهبي من اللوجو */
+  text-decoration: none;
+  font-size: 18px;
+}
+
+nav ul li a:hover {
+  color: #F0E68C; /* ذهبي أفتح للتأثير */
+}
+
+/* Home Section */
+#home {
+  text-align: center;
+  padding: 100px 20px;
+  background: url('Assets/background.jpg') no-repeat top center/cover; /* صورة الخلفية */
+  color: #3A2A2A;
+  position: relative;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(229, 215, 189, 0.8); /* طبقة شفافة بنفس لون الخلفية */
+}
+
+#home h2, #home p, .services {
+  position: relative;
+  z-index: 1;
+}
+
+#home h2 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+#home p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.services {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.service-card {
+  background: white;
+  color: #3A2A2A;
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #D4AF37; /* حدود ذهبية */
+}
+
+.service-card h3 {
+  margin-bottom: 10px;
+  color: #D4AF37;
+}
+
+/* Outfit Suggestions Section */
+#outfit {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#outfit h2 {
+  margin-bottom: 20px;
+  color: #3A2A2A;
+}
+
+.upload-box {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #D4AF37;
+}
+
+.upload-box input {
+  margin: 10px 0;
+}
+
+.upload-box button {
+  padding: 10px 20px;
+  background: #D4AF37;
+  color: #3A2A2A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.upload-box button:hover {
+  background: #F0E68C;
+}
+
+/* Shop Section */
+#shop {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#shop h2 {
+  margin-bottom: 20px;
+  color: #3A2A2A;
+}
+
+.products {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.product-card {
+  background: white;
+  width: 250px;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border: 1px solid #D4AF37;
+}
+
+.product-card img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.product-card h3 {
+  margin: 10px 0;
+  color: #D4AF37;
+}
+
+.product-card p {
+  color: #3A2A2A;
+}
+
+/* Recycling Section */
+#recycling {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#recycling h2 {
+  margin-bottom: 20px;
+  color: #3A2A2A;
+}
+
+.recycling-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  margin: 0 auto;
+  border: 1px solid #D4AF37;
+}
+
+.recycling-form input,
+.recycling-form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #D4AF37;
+  border-radius: 5px;
+}
+
+.recycling-form button {
+  padding: 10px 20px;
+  background: #D4AF37;
+  color: #3A2A2A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.recycling-form button:hover {
+  background: #F0E68C;
+}
+
+
+
+/* Login Section */
+#login {
+  padding: 50px 20px;
+  text-align: center;
+}
+
+#login h2 {
+  margin-bottom: 20px;
+  color: #3A2A2A;
+}
+
+.login-form {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  max-width: 400px;
+  margin: 0 auto;
+  border: 1px solid #D4AF37;
+}
+
+.login-form input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #D4AF37;
+  border-radius: 5px;
+}
+
+.login-form button {
+  padding: 10px 20px;
+  background: #D4AF37;
+  color: #3A2A2A;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.login-form button:hover {
+  background: #F0E68C;
+}
+
+/* Footer */
+footer {
+  background: #3A2A2A;
+  color: #D4AF37;
+  text-align: center;
+  padding: 20px;
+  margin-top: 50px;
+}
